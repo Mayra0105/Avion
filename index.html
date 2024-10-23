@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body class="nubes">
+    <img id="avion" src="avion_transparent.png" alt="Avión"/>
+
+    <div class="flex buttons">
+        <button onclick="arrancar()">▶️ Arrancar</button>
+        <button onclick="parar()">⏯️ Parar</button>
+        <label for="velocidad">Velocidad:</label>
+        <select id="velocidad" onchange="cambiarVelocidad()">
+            <option value="5">Lenta</option>
+            <option value="10" selected>Media</option>
+            <option value="20">Rápida</option>
+        </select>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

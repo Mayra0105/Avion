@@ -1,0 +1,77 @@
+
+body {
+    background-color: #7ac4e2;
+    font-size: normal;
+    font-family: Arial, sans-serif;
+}
+#avion {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: transform 0.2s;
+}
+
+body.nubes {
+  background-image: url('bg-nubes.jpg');
+}
+
+/* General styles for the toolbar */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    gap: 10px; /* Space between elements */
+}
+
+/* Button styles */
+button {
+    background-color: #366290;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #416fa5;
+}
+
+/* Select and Label styling */
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Flex container for label and select to ensure they align properly */
+.buttons label, .buttons select {
+    display: flex;
+    align-items: center;
+}
+
+/* Make the toolbar responsive */
+.flex {
+    flex-wrap: wrap;
+}
+
+button, select {
+    flex: 1;
+    min-width: 150px; /* Minimum width to avoid too much shrinkage */
+    z-index: 99;
+}
